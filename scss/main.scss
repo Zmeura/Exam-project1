@@ -88,13 +88,16 @@ html {
 }
 
 .burger {
-  opacity: 0;
-  width: 34px;
-  height: 34px;
-  position: relative;
-  right: -7px;
+  visibility: hidden;
 
   @media screen and(max-width: 820px) {
+    visibility: visible;
+    opacity: 0;
+    width: 34px;
+    height: 34px;
+    position: relative;
+    right: -7px;
+
     &:checked ~ .menu {
       right: 0;
       visibility: visible;
@@ -181,6 +184,9 @@ html {
   &__item {
     &:hover {
       scale: 120%;
+      @media screen and(max-width: 820px) {
+        scale: 100%;
+      }
     }
 
     @media screen and(max-width: 820px) {
