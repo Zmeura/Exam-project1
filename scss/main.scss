@@ -75,11 +75,15 @@ html {
 .nav {
   display: flex;
   justify-content: flex-start;
+  flex-grow: 1;
+  gap: 120px;
 
   @media screen and(max-width: 820px) {
     order: 2;
     width: 60px;
     margin-right: -13px;
+    flex-grow: 0;
+    gap: 0;
   }
 }
 
