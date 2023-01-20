@@ -49,15 +49,14 @@
 @mixin burgerMenu {
   position: fixed;
   top: 99px;
+  right: -100%;
   width: 250px;
   flex-direction: column;
   z-index: 12;
   background: $btn_light-rose_color;
   padding: 0;
-  box-shadow: 0 0 2px 0 $hover_color;
   gap: 0;
   visibility: hidden;
   opacity: 0;
-  box-shadow: 1px 5px 11px 4px #698d8d;
-  right: -100%;
+  box-shadow: 1px 2px 11px 4px #698d8d;
 }

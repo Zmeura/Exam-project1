@@ -269,6 +269,7 @@ html {
   @media screen and (max-width: 1078px) {
     flex-direction: column-reverse;
     text-align: center;
+    margin-bottom: 40px;
 
     &__btn {
       margin: 0 auto;
@@ -327,7 +328,7 @@ html {
 
   @media screen and (max-width: 1078px) {
     flex-direction: column;
-    margin-bottom: 60px;
+    margin-bottom: 65px;
     padding: 50px 25px;
   }
 
@@ -390,6 +391,10 @@ html {
     font-weight: 500;
     font-size: 0.89rem;
     margin: 50px auto 80px;
+
+    @media screen and (max-width: 1078px) {
+      margin: 20px auto 70px;
+    }
   }
 
   &__container {
@@ -403,6 +408,7 @@ html {
       justify-items: center;
       grid-template-rows: 1fr;
       grid-template-columns: 100%;
+      row-gap: 25px;
     }
   }
 
@@ -683,6 +689,10 @@ html {
       color: $hover_color;
     }
   }
+}
+
+.footer-about {
+  min-width: 85px;
 }
 
 .about-help-box {

@@ -173,17 +173,16 @@ html {
   .menu {
     position: fixed;
     top: 99px;
+    right: -100%;
     width: 250px;
     flex-direction: column;
     z-index: 12;
     background: #ea77bc;
     padding: 0;
-    box-shadow: 0 0 2px 0 #8a40ee;
     gap: 0;
     visibility: hidden;
     opacity: 0;
-    box-shadow: 1px 5px 11px 4px #698d8d;
-    right: -100%;
+    box-shadow: 1px 2px 11px 4px #698d8d;
   }
 }
 .menu__link {
@@ -294,6 +293,7 @@ html {
   .info {
     flex-direction: column-reverse;
     text-align: center;
+    margin-bottom: 40px;
   }
   .info__btn {
     margin: 0 auto;
@@ -353,7 +353,7 @@ html {
 @media screen and (max-width: 1078px) {
   .about {
     flex-direction: column;
-    margin-bottom: 60px;
+    margin-bottom: 65px;
     padding: 50px 25px;
   }
 }
@@ -420,6 +420,11 @@ html {
   font-size: 0.89rem;
   margin: 50px auto 80px;
 }
+@media screen and (max-width: 1078px) {
+  .features__subtitle {
+    margin: 20px auto 70px;
+  }
+}
 .features__container {
   display: grid;
   justify-items: end;
@@ -432,6 +437,7 @@ html {
     justify-items: center;
     grid-template-rows: 1fr;
     grid-template-columns: 100%;
+    row-gap: 25px;
   }
 }
 .features__item {
@@ -752,6 +758,10 @@ html {
 .contacts__link:hover {
   cursor: url("../img/cursor.png"), pointer;
   color: #8a40ee;
+}
+
+.footer-about {
+  min-width: 85px;
 }
 
 .about-help-box {
